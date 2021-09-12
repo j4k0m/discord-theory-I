@@ -17,7 +17,7 @@ The Discord Gift URL followed by a 16-length code will redirect you to the claim
 ## First look:
 At first sight it looks like Base64 encoded, using Burp Suite Decoder we will be able to get this result:
 ```
-00000000	84	d3	79	48	1b	27	1d	33	c5	16	1d	d9	--	--	--	--	ÓyH'3ÅÙ
+00000000 84 d3 79 48 1b 27 1d 33 c5 16 1d d9 -- -- -- -- ÓyH'3ÅÙ
 ```
 After searching for what each byte in a 12-byte string is, I was able to sort each character and see what the code actually consisted of, 4 extended characters and 8 printable/non-printable characters, you can check https://www.rapidtables.com/code/text/ascii-table.html to know more about those type of characters.
 - Extanded:
