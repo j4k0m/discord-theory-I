@@ -46,3 +46,5 @@ def sorting(code):
     print(f"Normal: {' '.join(map(hex, no))}")
     print(f"Extanded: {len(ex)}, Normal: {len(no)}")
 ```
+
+# Finding a Pattern 
