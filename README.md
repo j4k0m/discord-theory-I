@@ -47,4 +47,4 @@ def sorting(code):
     print(f"Extanded: {len(ex)}, Normal: {len(no)}")
 ```
 
-# Finding a Pattern 
+## Finding a Pattern 
