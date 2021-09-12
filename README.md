@@ -24,3 +24,21 @@ After searching for what each byte in a 12-byte string is, I was able to sort ea
 ```
 0x79 0x48 0x1b 0x27 0x1d 0x33 0x16 0x1d
 ```
+Doing this over and over again will take a lot of time, so I coded this function that automates the work, feel free to use it:
+
+```py
+import re, base64
+
+def sorting(code):
+    list = [ord(chr(eval(j))) for j in ['0x'+ i for i in re.findall('..', base64.b64decode(code).hex())]]
+    ex = []
+    no = []
+    for i in list:
+        if i >= 0 and i <= 127:
+            no.append(i)
+        elif i >= 128 and i <= 255:
+            ex.append(i)
+    print(f"Extanded: {' '.join(map(hex, ex))}")
+    print(f"Normal: {' '.join(map(hex, no))}")
+    print(f"Extanded: {len(ex)}, Normal: {len(no)}")
+```
