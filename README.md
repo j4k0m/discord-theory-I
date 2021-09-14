@@ -7,7 +7,7 @@ The Nitro generation tools thing is common in Discord now, but none of the tools
 - NOTE: This is just for research, I will and I hope no one uses it for bad purposes.
 ```
 
-## Introducation:
+## Introduction:
 If you are not familiar with Discord, nitro is a kind of membership, you pay to get access and do some cool things on Discord, like get a GIF profile picture or upload large size photos and videos, and in order to get it you must either buy it directly or having someone offer it to you, in the second case it would be something like this:
 ```
 https://discord.gift/hNN5SBsnHTPFFh3Z
