@@ -18,7 +18,7 @@ The Discord Gift URL followed by a 16-length code will redirect you to the claim
 
 ## First look:
 
-At first sight it looks like Base64 encoded, using Burp Suite Decoder we will be able to get this result:
+At first sight it looks like Base64 encrypted, using Burp Suite Decoder we will be able to get this result:
 
 ```markdown
 00000000 84 d3 79 48 1b 27 1d 33 c5 16 1d d9 -- -- -- -- �ÓyH�'�3Å��Ù
