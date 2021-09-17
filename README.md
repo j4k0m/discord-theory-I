@@ -119,3 +119,56 @@ PS C:\Users\ayman\Desktop\discord-theory> python .\generate_map.py
 PS C:\Users\ayman\Desktop\discord-theory> 
 ```
 Note that I've seen some 24-length nitro codes, but I'm assuming you can just find the right map to generate this type of codes.
+
+## Generation:
+
+In order to create a generation function, by putting everything together according to the rules above, by creating a function that takes the coordinates from `generate_map()` function, a random amount of extended and printable/non-printable characters and shuffle them together and convert them to hex, we will end up with this:
+
+```python
+import random
+
+_map = [3, 4, 5, 7, 8, 9]
+
+def generate_map():
+    e = random.choice(_map)
+    if e >= 3 and e <= 5:
+        n = _map[::-1][0:3][_map[0:3].index(e)]
+    else:
+        n = _map[0:3][_map[::-1][0:3].index(e)]
+    return {"Extanded": e, "Normal": n}
+
+def generate():
+    c = generate_map()
+    ex, no = c["Extanded"], c["Normal"]
+    _chars = random.sample(range(128,255), ex)
+    _chars.extend(random.sample(range(1,126), no))
+    random.shuffle(_chars)
+    return " ".join(list(map(hex ,_chars)))
+
+print(generate())
+```
+
+An example (Hex):
+
+```
+0xd3 0x38 0xe3 0x68 0xd0 0xf6 0xa9 0xfe 0xa7 0xad 0x13 0xb9
+```
+
+Base64:
+
+```
+0zjjaND2qf6nrRO5
+```
+
+```php
+Extanded: 0xd3 0xe3 0xd0 0xf6 0xa9 0xfe 0xa7 0xad 0xb9
+Normal: 0x38 0x68 0x13
+Extanded: 9, Normal: 3
+```
+
+# Problems:
+
+- Nitro code should contain no padding.
+- An ethical way to validate the generated codes.
+
+Thanks for reading <3.
