@@ -112,7 +112,7 @@ def generate_map():
         n = _map[0:3][_map[::-1][0:3].index(e)]
     return {"Extended": e, "Normal": n}
 ```
-An exmaple:
+An example:
 ```python
 PS C:\Users\ayman\Desktop\discord-theory> python .\generate_map.py
 {'Extanded': 5, 'Normal': 7}
