@@ -112,5 +112,10 @@ def generate_map():
         n = _map[0:3][_map[::-1][0:3].index(e)]
     return {"Extended": e, "Normal": n}
 ```
-
+An exmaple:
+```python
+PS C:\Users\ayman\Desktop\discord-theory> python .\generate_hex.py
+{'Extanded': 5, 'Normal': 7}
+PS C:\Users\ayman\Desktop\discord-theory> 
+```
 Note that I've seen some nitro codes with 24-length, but I'm assuming you can just find the right map to generate this type of codes.
