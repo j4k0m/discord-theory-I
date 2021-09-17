@@ -135,11 +135,11 @@ def generate_map():
         n = _map[::-1][0:3][_map[0:3].index(e)]
     else:
         n = _map[0:3][_map[::-1][0:3].index(e)]
-    return {"Extanded": e, "Normal": n}
+    return {"Extended": e, "Normal": n}
 
 def generate():
     c = generate_map()
-    ex, no = c["Extanded"], c["Normal"]
+    ex, no = c["Extended"], c["Normal"]
     _chars = random.sample(range(128,255), ex)
     _chars.extend(random.sample(range(1,126), no))
     random.shuffle(_chars)
@@ -163,7 +163,7 @@ Base64:
 ```php
 Extanded: 0xd3 0xe3 0xd0 0xf6 0xa9 0xfe 0xa7 0xad 0xb9
 Normal: 0x38 0x68 0x13
-Extanded: 9, Normal: 3
+Extended: 9, Normal: 3
 ```
 
 # Problems:
