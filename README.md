@@ -122,7 +122,7 @@ Note that I've seen some 24-length nitro codes, but I'm assuming you can just fi
 
 ## Generation:
 
-In order to create a generation function, by putting everything together according to the rules above, by creating a function that takes the coordinates from `generate_map()` function, a random amount of extended and printable/non-printable characters and shuffle them together and convert them to hex, we will end up with this:
+In order to create a generation function, by putting everything together according to the rules above, by creating a function that takes the coordinates from `generate_map()` function, a random extended and printable/non-printable characters and shuffle them together and convert them to hex, we will end up with this:
 
 ```python
 import random
