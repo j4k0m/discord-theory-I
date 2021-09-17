@@ -114,7 +114,7 @@ def generate_map():
 ```
 An exmaple:
 ```python
-PS C:\Users\ayman\Desktop\discord-theory> python .\generate_hex.py
+PS C:\Users\ayman\Desktop\discord-theory> python .\generate_map.py
 {'Extanded': 5, 'Normal': 7}
 PS C:\Users\ayman\Desktop\discord-theory> 
 ```
