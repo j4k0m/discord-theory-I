@@ -118,4 +118,4 @@ PS C:\Users\ayman\Desktop\discord-theory> python .\generate_map.py
 {'Extended': 5, 'Normal': 7}
 PS C:\Users\ayman\Desktop\discord-theory> 
 ```
-Note that I've seen some nitro codes with 24-length, but I'm assuming you can just find the right map to generate this type of codes.
+Note that I've seen some 24-length nitro codes, but I'm assuming you can just find the right map to generate this type of codes.
