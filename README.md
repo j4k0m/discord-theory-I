@@ -91,7 +91,7 @@ From this I was able to know a few rules that must be followed in creating the c
 - There are no duplicate characters.
 - There is a pattern with 3,4,5,7,8,9.
 
-Looking at the numbers we can see a pattern, if we choose 3 extended characters from the other side, we'll have a 9 normal characters, it's some kind of ROT algorithm, and to simplify it, it's something like this:
+Looking at the numbers we can see a pattern, if we choose 3 extended characters from the other side, we'll have a 9 normal characters, it's something like [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher), and to simplify it, it's something like this:
 
 ![image](https://user-images.githubusercontent.com/48088579/133827790-e5ff9ede-ad38-4d47-9e0b-9c819b484a2f.png)
 
